@@ -1,0 +1,114 @@
+@font-face {
+  font-family: 'Babas Neue';
+  src: url('./assets/fonts/bebasneue-book-webfont.woff');
+  src: url('./assets/fonts/bebasneue-book-webfont.woff2');
+}
+
+:root {
+  /* Colors */
+  --background: #2b2a30;
+  --red: #9d0000;
+  --green: #00aa51;
+  --white: #ffffff;
+
+  /* Typography */
+  --font-timer: 'Babas Neue';
+  --font-button: 'Montserrat', sans-serif;
+
+  /* Size */
+  --fs-900: 12.25rem;
+  --fs-400: 1rem;
+
+  /* Weight */
+  --fw-400: 400;
+}
+
+/* Reset */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body,
+p,
+button {
+  margin: 0;
+}
+
+a {
+  color: var(--white);
+  padding-top: 1rem;
+}
+
+body {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+    'header'
+    'main'
+    'footer';
+
+  background-color: var(--background);
+  color: var(--white);
+  font-family: var(--font-button);
+  font-size: var(--fs-400);
+}
+
+header {
+  grid-area: header;
+}
+
+main {
+  grid-area: main;
+  display: grid;
+  place-items: center;
+}
+
+.clock {
+  width: 32.375rem;
+  aspect-ratio: 1;
+  border: 10px solid var(--red);
+  border-radius: 50%;
+}
+
+.clock-face {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.time {
+  font-family: var(--font-timer);
+  font-size: var(--fs-900);
+  padding-top: 0.5em;
+}
+
+button {
+  display: block;
+  background: var(--background);
+  border: none;
+  font-family: inherit;
+  font-size: var(--fs-400);
+  color: var(--white);
+}
+
+button:first-of-type {
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  grid-area: footer;
+  padding-bottom: 2rem;
+}
