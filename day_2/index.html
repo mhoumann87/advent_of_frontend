@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Advent of Front-end - Day 2 - To-go Menu</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./to-go_menu.js" defer></script>
+  </head>
+  <body class="grid">
+    <header class="main__header"></header>
+
+    <main class="grid">
+      <article class="menu card flex">
+        <header class="card__header">
+          <h2 class="fs-900 fw-700">To Go Menu</h2>
+        </header>
+
+        <div class="menu__item">
+          <img src="./images/plate__french-fries.png" alt="french fries" />
+          <p class="fs-500 fw-400">French Fries with <span class="block">Ketchup</span></p>
+          <p class="price fs-900 fw-700 m-top">$2.23</p>
+          <button class="fs-400 fw-700 m-top">Add to Cart</button>
+        </div>
+
+        <div class="menu__item">
+          <img
+            src="./images/plate__salmon-vegetables.png"
+            alt="salmon and vegetables"
+          />
+          <p class="fs-500 fw-400">Salmon and <span class="block>Vegetables</span"></p>
+          <p class="price fs-900 fw-700 m-top">$5.12</p>
+          <button class="fs-400 fw-700 m-top">Add to Cart</button>
+        </div>
+
+        <div class="menu__item">
+          <img
+            src="./images/plate__spaghetti-meat-sauce.png"
+            alt="spaghetti with meat sauce"
+          />
+          <p class="fs-500 fw-400">Spaghetti with <span class="block">Meat Sauce</span></p>
+          <p class="price fs-900 fw-700 m-top">$7.12</p>
+          <button class="fs-400 fw-700 m-top">Add to Cart</button>
+        </div>
+
+        <div class="menu__item">
+          <img
+            src="./images/plate__french-fries.png"
+            alt="french fries with ketchup"
+          />
+          <p class="fs-500 fw-400">
+            French Fries with <span class="block">Ketchup</span>
+          </p>
+          <p class="price fs-900 fw-700 m-top">$2.23</p>
+          <button class="fs-400 fw-700 m-top">Add to Cart</button>
+        </div>
+      </article>
+
+      <article class="cart card">
+        <header class="card__header">
+          <h2>Your Cart</h2>
+          <p>Your cart is empty</p>
+        </header>
+      </article>
+    </main>
+
+    <footer>
+      <a href="https://adventofcss.com" target="_blank">Advent of CSS</a>
+      <a href="https://adventofjs.com" target="_blank">Advent of JavaScript</a>
+    </footer>
+  </body>
+</html>
