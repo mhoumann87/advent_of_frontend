@@ -1,0 +1,122 @@
+:root {
+  /* Colors */
+  --clr-background: #eff0f6;
+  --clr-border: #d7d6fc;
+  --clr-primary-purple: #6b00f5;
+  --clr-pattens-blue: #e1f0fe;
+  --clr-ghost-white: #f7f7ff;
+  --clr-white-ice: #defef0;
+  --clr-white: #ffffff;
+  --clr-black: #000;
+
+  /* Typography */
+  --ff-main-font: 'Poppins', sans-serif;
+
+  /* font size */
+  --fs-900: 2rem;
+  --fs-500: 1.125rem;
+  --fs-400: 1rem;
+
+  /* font Weight */
+  --fw-700: 700;
+  --fw-400: 400;
+}
+
+/* reset */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+p {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Utility Classes */
+
+.grid {
+  display: grid;
+}
+
+.flex {
+  display: flex;
+}
+
+.block {
+  display: block;
+}
+
+.fs-900 {
+  font-size: var(--fs-900);
+}
+
+.fs-500 {
+  font-size: var(--fs-500);
+}
+
+.fs-400 {
+  font-size: var(--fs-400);
+}
+
+.fw-700 {
+  font-weight: var(--fw-700);
+}
+
+.fw-400 {
+  font-weight: var(--fw-400);
+}
+
+.m-top {
+  margin-top: var(--m-top), 1rem;
+}
+
+/* Components */
+body {
+  font-family: var(--ff-main-font);
+  min-height: 100vh;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+    'header'
+    'main'
+    'footer';
+
+  background-color: var(--clr-white);
+  background-image: url('./images/bg__btm-right.svg');
+  color: var(--clr-black);
+}
+
+header {
+  grid-area: header;
+}
+
+main {
+  grid-area: main;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-areas: '. menu . cart .';
+}
+
+.card {
+  background-color: var(--clr-background);
+  border-radius: 25px;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.menu {
+  grid-area: menu;
+}
+
+.cart {
+  grid-area: cart;
+}
