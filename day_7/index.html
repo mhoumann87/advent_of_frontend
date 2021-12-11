@@ -19,19 +19,41 @@
     <header></header>
     <main>
       <article class="card">
-        <div class="card__output--box">
+        <div class="card__box card__output--box">
           <div class="card__output--content">
-            <label for="tip-output"
-              >Tip Amount
-              <span id="tip-output">0.00</span>
-            </label>
+            <label for="tip-output">Tip Amount</label>
+            <span id="tip-output">0.00</span>
           </div>
 
           <div class="card__output--content">
-            <label for="price-person">
-              Total per Person
-              <span class="price-person">0.00</span>
-            </label>
+            <label for="price-person"></label>
+            Total per Person
+            <span class="price-person">0.00</span>
+          </div>
+        </div>
+
+        <div class="card__box card__input--box">
+          <div class="card__input--content">
+            <img src="./images/dollar.svg" alt="dollar sign" />
+            <input type="number" name="amount" id="amount" />
+            <label for="amount">Bill Amount</label>
+          </div>
+
+          <div class="card__input--content">
+            <img src="./images/people.svg" alt="persons" />
+            <input type="number" name="persons" id="persons" />
+            <label for="persons">Number of Persons</label>
+          </div>
+
+          <div class="card__button--box">
+            <button class="percent__btn" data-percent-val="5">5%</button>
+            <button class="percent__btn" data-percent-val="10">10%</button>
+            <button class="percent__btn" data-percent-val="15">15%</button>
+            <button class="percent__btn" data-percent-val="20">20%</button>
+          </div>
+
+          <div class="calc-btn">
+            <button type="submit">Calculate</button>
           </div>
         </div>
       </article>
